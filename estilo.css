@@ -138,11 +138,24 @@ html {
 
 /* SOBRE MI */
 #sobremi {
-    max-width: 1100px;
+    max-width: 100%;
     margin: auto;
-    padding: 100px 15px;
+    padding: 50px 15px;
     color: #111135;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#sobremi .sobremi .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
 }
 
 #sobremi .contenedor-foto {
@@ -161,14 +174,6 @@ html {
     margin: 0 20px;  
 }
 
-#sobremi .sobremi .titulo-seccion{
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #d3d3d3;
-    text-decoration-thickness: 5px;
-}
 
 #sobremi .sobremi h2{
     font-size: 34px;
@@ -214,7 +219,7 @@ html {
 
 /* SECCION SERVICIOS */
 #servicios{
-    padding: 100px 15px;
+    padding: 50px 15px;
     text-align: center;
     background-color: #f3f3f3;
 }
@@ -232,7 +237,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 1100px;
     margin: 30px auto;
 }
@@ -278,7 +283,7 @@ html {
     margin-bottom: 10px;
 }
 
-#servicios .fola .servicio p{
+#servicios .fila .servicio p{
     font-size: 14px;
     line-height: 22px;
 }
@@ -292,13 +297,14 @@ html {
     background-size: cover;
     background-position: center center;
     padding: 100px 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #d3d3d3;
 }
 
 .contenedor-skills .skill{
-    max-width: 600px;
-    margin: 30px auto;
+    width: 600px;
 }
 
 .contenedor-skills .skill .info{
@@ -398,7 +404,7 @@ html {
 /* SECCION PORTAFOLIO */
 #portfolio{
     max-width: 1100px;
-    padding: 100px 0;
+    padding: 50px 15px;
     margin: auto;
 }
 
@@ -413,26 +419,25 @@ html {
 }
 
 #portfolio .fila {
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 30px 0;
 }
 
 #portfolio .fila .proyecto {
     display: flex;
-    border: 1px solid #000;
-    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
 }
 
 #portfolio .fila .proyecto img {
+    border: 1px solid #000;
     max-width: 500px;
     filter: grayscale(1);
     object-fit: cover;
     transition: .5s;
+    margin-right: 10px
 }
 
 #portfolio .fila .proyecto:hover img {
@@ -444,7 +449,7 @@ html {
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
     color: rgb(141, 105, 23);
-    width: 100%;
+    width: 500px;
     padding: 10px;
     opacity: 0;
     bottom: -40px;
@@ -456,10 +461,10 @@ html {
     bottom: 0;
 }
 
-/* SECCIO CONTACTO */
+/* SECCION CONTACTO */
 
 #contacto {
-    padding: 100px 15px;
+    padding: 50px 15px;
 }
 
 #contacto .titulo-seccion {
@@ -583,25 +588,38 @@ footer a{
         font-size: 25px;
         text-align: center;
     }
-    #servicios {
-        padding: 50px 15px;
-    }
+    
     #servicios .fila{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+        max-width: 1100px;
     }
+    
     #servicios .fila .servicio{
-        margin: 10px auto;
+        max-width: 300px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        transition: .5s;
+        margin-bottom: 10px;
     }
     .contenedor-skills {
-        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
     }
     #portfolio {
         padding: 50px 0;
     }
     #portfolio .fila {
-        display: block;
-        width: 500px;
-        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    #portfolio .proyecto, .info, img {
+        font-size: 10px;
+        width: 400px;
     }
     #contacto {
         padding: 50px 15px;
