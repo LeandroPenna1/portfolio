@@ -159,7 +159,7 @@ html {
 }
 
 #sobremi .contenedor-foto {
-    max-width: 400px;
+    max-width: 200px;
     margin-right: 80px;
 }
 
@@ -201,7 +201,7 @@ html {
     margin-bottom: 12px;
 }
 
-#sobremi .sobremi a{
+#sobremi a{
     display: inline-block;
     text-decoration: none;
     color: #000;
@@ -408,6 +408,22 @@ html {
     max-width: 1100px;
     padding: 50px 15px;
     margin: auto;
+}
+
+#portfolio .control {
+    display: flex;
+    justify-content: space-between;
+}
+
+#portfolio .control .arrow-left, .arrow-right {
+    font-size: 64px;
+    cursor: pointer;
+}
+
+#portfolio .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 #portfolio .titulo-seccion{

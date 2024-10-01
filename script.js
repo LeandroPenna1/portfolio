@@ -20,3 +20,24 @@ function responsiveMenu() {
         x.className = "";
     }
 }
+
+/* PROTFOLIO */
+const arrowLeft = document.querySelector('.arrow-left');
+const arrowRight = document.querySelector('.arrow-right');
+const proyectosWeb = document.querySelector('.proyectos-web');
+const proyectosData = document.querySelector('.proyectos-data');
+
+arrowRight.addEventListener('click', () => {
+    proyectosWeb.style.display = 'none';
+    proyectosData.style.display = 'flex';
+    arrowLeft.style = 'flex';
+    arrowRight.style = 'none';
+});
+
+arrowLeft.addEventListener('click', () => {
+    proyectosData.style.display = 'none';
+    proyectosWeb.style.display = 'flex';
+    arrowLeft.style = 'none';
+    arrowRight.style = 'flex';
+});
+
