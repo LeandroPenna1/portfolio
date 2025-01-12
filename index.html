@@ -26,7 +26,13 @@
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
                             <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
-                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li class="dropdown">
+                                <a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a>
+                                <ul class="submenu">
+                                    <li><a href="#frontend">Proyectos Front End</a></li>
+                                    <li><a href="/ProyectosData/data.html">Proyectos Data Analytics</a></li>
+                                </ul>
+                            </li>                            
                             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
@@ -47,7 +53,7 @@
                 <p class="bienvenida">Bienvenidos</p>
                 <h2>Soy <span>Leandro Penna</span>, Desarrollador</h2>
                 <p class="descripcion">Me llamo Leandro y tengo 26 años. Actualmente, me especializo en el
-                    desarrollo Front End y también estoy adiquieriendo conocimientos en Data Analytics.
+                    desarrollo Front End, aunque en este último tiempo estuve enfocado también en el análisis de datos.
                 </p>
                 <a href="#portfolio">Ir a portafolio</a>
             </div>
@@ -68,7 +74,7 @@
                 <p>Como mencioné anteriormente, me considero una persona que se encuentra siempre adiquieriendo
                     distintos
                     conocimientos en el área IT: </p>
-                <p><strong>CURSO DATA ANALYTICS</strong> - Coder House (en curso):<br>
+                <p><strong>CURSO DATA ANALYTICS</strong> - Coder House (finalizado):<br>
                     Excel, SQL Server y Power BI.</p>
                 <p><strong>CARRERA FRONT-END REACT</strong> - Coder House (finalizado):<br>
                     Comprende 3 cursos: Desarrollo Web, Javascript y ReactJS.</p>
@@ -274,8 +280,8 @@
                         <img src="img/powerbi1.png" alt="Power BI Project">
                     </a>
                         <div class="info">
-                            <h4>Proyecto de Data Analytics</h4>
-                            <p>Análisis de datos con Power BI, Excel y SQL Server.</p>
+                            <h4>ProyectoS de Data Analytics</h4>
+                            <p>Análisis de datos con Python, Excel, SQL Server y PowerBI.</p>
                         </div>
                 </div>
             </div>

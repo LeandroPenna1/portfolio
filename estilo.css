@@ -61,6 +61,44 @@ html {
     color: rgb(141, 105, 23);
 }
 
+#inicio .dropdown {
+    position: relative;
+}
+
+#inicio .dropdown .submenu {
+    display: none !important; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #00000073;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+#inicio .dropdown .submenu li {
+    margin: 0;
+    padding: 0;
+}
+
+#inicio .dropdown .submenu a {
+    display: block;
+    padding: 10px 15px;
+    color: #000000;
+    text-decoration: none;
+    white-space: nowrap; 
+}
+
+#inicio .dropdown .submenu a:hover {
+    color:  rgb(141, 105, 23);
+}
+
+#inicio .dropdown:hover .submenu {
+    display: block !important;
+}
+
 #inicio .contenido header .contenido-header .redes a {
     text-decoration: none;
     color: #fff;
