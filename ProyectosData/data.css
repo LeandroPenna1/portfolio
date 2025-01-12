@@ -97,6 +97,9 @@ html {
     display: block !important;
 }
 
+#icono-nav {
+    display: none;
+}
 
 #data .contenido header .contenido-header .redes a {
     text-decoration: none;
