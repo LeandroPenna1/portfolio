@@ -141,7 +141,7 @@ html {
     background-position: center center;
 }
 
-#premierleague, #postings {
+#premierleague, #postings, #economia {
     height: 100vh;
     display: flex;
     text-align: center;
@@ -150,13 +150,15 @@ html {
 }
 
 #premierleague .detalle,
-#postings .detalle  {
+#postings .detalle, 
+#economia .detalle  {
     width: 500px;
     padding: 0 10px;
 }
 
 #carouselExampleCaptions,
-#carouselExampleCaptions-linkedin {
+#carouselExampleCaptions-linkedin,
+#carouselExampleCaptions-economia {
     width: 700px;
     height: 392px;
     margin: 0 auto;
@@ -188,13 +190,15 @@ html {
 
 
     #premierleague .detalle,
-    #postings .detalle  {
+    #postings .detalle,
+    #economia .detalle  {
         font-size: 15px;
         width: 100vw;
     }
 
     #carouselExampleCaptions,
-    #carouselExampleCaptions-linkedin {
+    #carouselExampleCaptions-linkedin,
+    #carouselExampleCaptions-economia {
         width: 100%;
         height: auto;
         overflow: hidden;
@@ -265,7 +269,8 @@ html {
     }
 
     #premierleague,
-    #postings {
+    #postings,
+    #economia {
         height: 100vh;
         padding: 50px 0;
         display: flex;
@@ -273,13 +278,15 @@ html {
     }
 
     #premierleague .detalle,
-    #postings .detalle  {
+    #postings .detalle,
+    #economia .detalle  {
         font-size: 10px;
         width: 100vw;
     }
 
     #carouselExampleCaptions,
-    #carouselExampleCaptions-linkedin {
+    #carouselExampleCaptions-linkedin,
+    #carouselExampleCaptions-economia {
         width: 90%;
         height: auto;
         overflow: hidden;
